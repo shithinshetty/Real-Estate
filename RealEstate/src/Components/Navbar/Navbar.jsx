@@ -12,8 +12,17 @@ const Navbar = () => {
     setMenu("menu");
   };
 
+  const [transparent, setTransparent] = useState("Navbar");
+  const addBg = () => {
+    if (window.scrollY >= 10) {
+      setTransparent("Navbar addBackground");
+    } else {
+      setTransparent("Navbar");
+    }
+  };
+  window.addEventListener("scroll", addBg);
   return (
-    <div className="Navbar">
+    <div className={transparent}>
       <div className="logoDiv">
         <MdMapsHomeWork className="icon" />
         <span> Find A Home</span>
