@@ -22,7 +22,8 @@
   --smallestFontSize: 0.75rem;
   --borderRadius: 10px;
 }
-:root .Navbar {
+
+.Navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,20 +33,21 @@
   background: transparent;
   z-index: 1000;
 }
-:root .Navbar .logoDiv {
+.Navbar .logoDiv {
   display: flex;
   align-items: center;
 }
-:root .Navbar .logoDiv .icon {
+.Navbar .logoDiv .icon {
   margin-right: 0.5rem;
 }
-:root .Navbar .logoDiv span {
+.Navbar .logoDiv span {
   font-size: var(--h2FontSize);
   justify-content: center;
   font-weight: 500;
 }
+
 @media screen and (max-width: 767px) {
-  :root .menu {
+  .menu {
     position: absolute;
     width: 70%;
     top: 100rem;
@@ -58,7 +60,7 @@
     transition: 0.8s ease-in-out;
     box-shadow: 0.2px 25px -5pox var(--shadowColor);
   }
-  :root .menu li {
+  .menu li {
     font-size: var(--h3FontSize);
     font-weight: 650;
     padding: 1.5rem 0;
@@ -66,21 +68,22 @@
     color: var(--whiteColor);
     cursor: pointer;
   }
-  :root .menu li:hover {
+  .menu li:hover {
     color: var(--primaryColorDark);
     border-bottom: 1px solid var(--primaryColorLight);
   }
 }
-:root .menuIcon,
-:root .closeIcon {
+.menuIcon,
+.closeIcon {
   color: rgb(147, 219, 199);
   font-size: var(--h1FontSize);
 }
-:root .menuIcon:hover,
-:root .closeIcon:hover {
+.menuIcon:hover,
+.closeIcon:hover {
   color: var(--primaryColorDark);
 }
-:root .closeIcon {
+
+.closeIcon {
   position: absolute;
   bottom: -15px;
   right: 50%;
@@ -93,7 +96,8 @@
   border-radius: 30%;
   box-shadow: 0 3px 20px 2px var(--shadowColor);
 }
-:root .showNavbar {
+
+.showNavbar {
   top: 8.5rem;
 }
 
