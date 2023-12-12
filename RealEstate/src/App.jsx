@@ -9,6 +9,8 @@ import Sponsors from "./Components/Sponsors/Sponsors";
 import Popular from "./Components/Popular/Popular";
 import Listing from "./Components/Listing/Listing";
 import About from "./Components/About/About";
+import Subscribe from "./Components/Subscribe/Subscribe";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
       <Popular />
       <Listing />
       <About />
+      <Contact />
+      <Subscribe />
+      <Footer />
     </>
   );
 }
