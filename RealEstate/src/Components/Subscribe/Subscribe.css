@@ -56,4 +56,39 @@
 }
 .Subscribe .secContent .btn:hover {
   background: linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198));
+}
+
+@media screen and (min-width: 480px) {
+  .Subscribe .secContent {
+    padding: 6rem 1.5rem;
+  }
+  .Subscribe h1 {
+    font-size: var(--biggestFontSize);
+  }
+  .Subscribe p {
+    font-size: var(--h3FontSize);
+  }
+  .Subscribe .btn {
+    font-size: var(--h3FontSize);
+  }
+}
+@media screen and (min-width: 1100px) {
+  .Subscribe {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    padding: 6rem 1.5rem;
+  }
+  .Subscribe .secContent {
+    padding: 6rem 1.5rem;
+  }
+  .Subscribe h1 {
+    font-size: var(--biggestFontSize);
+  }
+  .Subscribe p {
+    font-size: var(--h3FontSize);
+  }
+  .Subscribe .btn {
+    font-size: var(--h3FontSize);
+  }
 }/*# sourceMappingURL=Subscribe.css.map */

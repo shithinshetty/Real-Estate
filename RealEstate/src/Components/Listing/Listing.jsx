@@ -8,7 +8,7 @@ import image2 from "../../Assets/Listing_img3.jpg";
 import image3 from "../../Assets/Listing_img2.jpg";
 import image4 from "../../Assets/Listing_img4.jpg";
 import image5 from "../../Assets/Listing_img5.jpg";
-
+import image6 from "../../Assets/Listing_img6.jpg";
 import "./Listing.css";
 
 const properties = [
@@ -52,6 +52,14 @@ const properties = [
     desc: "Immerse yourself in the dynamic allure of VortexVista Villas, where homes offer panoramic views and a vortex of modern design.",
     beds: 20,
   },
+  {
+    id: 6,
+    image: image6,
+    name: "ElegantDwell Estates,Wilson Garden",
+    price: "98,000 ",
+    desc: "Embark on a journey of elegance with our exceptional real estate solutions. Where dreams find a home.",
+    beds: 10,
+  },
 ];
 const Listing = () => {
   return (
@@ -60,7 +68,7 @@ const Listing = () => {
         <div className="secHeader">
           <span className="orangeText">Our Listings</span>
           <h1 className="title">
-            Buy And Sell Properties
+            Buy/Sell/Rent Properties
             <span className="orangeDot">.</span>
           </h1>
           <p>
@@ -80,10 +88,9 @@ const Listing = () => {
             <button className="btn ">Standard</button>
           </div>
         </div>
-
-        {properties.map(({ id, image, name, price, desc, beds }) => {
-          return (
-            <div className="secContent grid">
+        <div className="secContent grid">
+          {properties.map(({ id, image, name, price, desc, beds }) => {
+            return (
               <div key={id} className="singleListing">
                 <div className="imgDiv">
                   <img src={image} alt="House Image" />
@@ -121,9 +128,9 @@ const Listing = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

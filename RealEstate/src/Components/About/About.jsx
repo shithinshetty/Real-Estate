@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./About.css";
 import Accordion from "./Accordion";
-import img from "../../Assets/About_img.jpg";
+import img from "../../Assets/About_img1.jpg";
 const About = () => {
   const [active, setActive] = useState("Proven Track Record");
   return (

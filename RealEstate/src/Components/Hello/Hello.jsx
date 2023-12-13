@@ -8,6 +8,7 @@ const Hello = () => {
       <div className="secContainer container flex">
         <div className="textDiv">
           <h1>Discover Affordable Properties in Bangalore</h1>
+
           <p>
             Find A Home is an innovative mixed-use real estate project located
             in the heart of a bustling urban center. The development aims to

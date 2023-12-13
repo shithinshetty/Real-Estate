@@ -134,3 +134,50 @@
     }
   }
 }
+
+//mediaqueries for display of <480px
+@media screen and (min-width: 480px) {
+  .Hello {
+    .secContainer {
+      .textDiv {
+        h1 {
+          font-size: var(--biggestFontSize);
+        }
+        p {
+          font-size: var(--h3FontSize);
+          line-height: 30px;
+        }
+
+        .searchBar {
+          .icon {
+            margin-right: 5px;
+          }
+          .btn {
+            padding: 0.8rem 1.5rem;
+          }
+        }
+
+        .numbers {
+          .singleNumber {
+            small {
+              padding-right: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .Hello {
+    .secContainer {
+      flex-direction: row;
+      gap: 5rem;
+
+      .imgDiv {
+        flex-basis: 90%;
+      }
+    }
+  }
+}

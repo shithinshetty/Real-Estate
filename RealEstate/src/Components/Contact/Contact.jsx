@@ -16,7 +16,7 @@ const Contact = () => {
             <div className="secTitle">
               <span className="orangeText">Contact Us</span>
               <h1>
-                Easy way to contact us <span className="orangeDot"></span>
+                Easy way to contact us<span className="orangeDot">.</span>
               </h1>
               <p>
                 Ready to get started? "Contact Us" and drop us a message. Your

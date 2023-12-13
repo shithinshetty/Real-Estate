@@ -107,4 +107,32 @@
   border: 5px solid var(--primaryColorLight);
   border-color: #fafafa;
   border-radius: 12%;
+}
+
+@media screen and (min-width: 480px) {
+  .Hello .secContainer .textDiv h1 {
+    font-size: var(--biggestFontSize);
+  }
+  .Hello .secContainer .textDiv p {
+    font-size: var(--h3FontSize);
+    line-height: 30px;
+  }
+  .Hello .secContainer .textDiv .searchBar .icon {
+    margin-right: 5px;
+  }
+  .Hello .secContainer .textDiv .searchBar .btn {
+    padding: 0.8rem 1.5rem;
+  }
+  .Hello .secContainer .textDiv .numbers .singleNumber small {
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Hello .secContainer {
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .Hello .secContainer .imgDiv {
+    flex-basis: 90%;
+  }
 }/*# sourceMappingURL=Hello.css.map */

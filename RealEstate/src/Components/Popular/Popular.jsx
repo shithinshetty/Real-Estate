@@ -24,8 +24,9 @@ const Popular = () => {
             <BiLeftArrowCircle className="icon" />
             <BiRightArrowCircle className="icon" />
           </div>
+
           {/*HOuse NO1*/}
-          <div className="secContent grid">
+          <div className="secContent">
             <div className="singleProperty">
               <div className="imgDiv">
                 <img src={img1} alt="House Image" />
@@ -42,10 +43,8 @@ const Popular = () => {
                 </p>
               </div>
             </div>
-          </div>
 
-          {/*HOuse NO2*/}
-          <div className="secContent grid">
+            {/*HOuse NO2*/}
             <div className="singleProperty">
               <div className="imgDiv">
                 <img src={img3} alt="House Image" />
@@ -62,10 +61,8 @@ const Popular = () => {
                 </p>
               </div>
             </div>
-          </div>
 
-          {/*HOuse NO3*/}
-          <div className="secContent grid">
+            {/*HOuse NO3*/}
             <div className="singleProperty">
               <div className="imgDiv">
                 <img src={img2} alt="House Image" />
@@ -81,9 +78,8 @@ const Popular = () => {
                 </p>
               </div>
             </div>
-          </div>
-          {/*HOuse NO4*/}
-          <div className="secContent grid">
+
+            {/*HOuse NO4*/}
             <div className="singleProperty">
               <div className="imgDiv">
                 <img src={img4} alt="House Image" />

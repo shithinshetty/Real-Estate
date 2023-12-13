@@ -124,3 +124,176 @@
     }
   }
 }
+@media screen and (min-width: 480px) {
+  .Contact {
+    .secContainer {
+      flex-direction: column;
+      flex-flow: column-reverse;
+      gap: 1.5rem;
+
+      .textDiv {
+        .secContent {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Contact {
+    .secContainer {
+      flex-direction: row;
+      flex-flow: row-reverse;
+      gap: 1.5rem;
+      align-items: flex-start;
+      .imgDiv {
+        flex-basis: 50%;
+        .About {
+          .secContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .imgDiv {
+              width: 100%;
+              padding-top: 20px;
+
+              img {
+                border: 5px solid var(--primaryColorLight);
+                border-color: #fafafa;
+                box-shadow: 0 50px 80px rgba(0, 0, 0, 0.925);
+                border-radius: 32%;
+                width: 100%;
+              }
+            }
+
+            .textDiv {
+              .secTitle {
+                text-align: left;
+                gap: 0.5rem;
+              }
+
+              .accordion {
+                gap: 0.5rem;
+                align-items: flex-start;
+                .singleAccordion {
+                  width: 100%;
+                  margin-bottom: 1rem;
+                  transition: all 0.3s ease-in-out;
+
+                  &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px #000;
+                    border-radius: var(--borderRadius);
+                  }
+
+                  .icon {
+                    color: var(--primaryColor);
+                    background: var(--primaryColorLight);
+                    padding: 5px;
+                    border-radius: 3px;
+                    font-size: 23px;
+                  }
+
+                  .accordionTitle {
+                    cursor: pointer;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem;
+                    border: 1px solid var(--shadowColor);
+                    border-radius: var(--borderRadius);
+
+                    .flex {
+                      align-items: center;
+                      gap: 0.3rem;
+                      justify-content: center;
+                      .titletext {
+                        font-weight: 600;
+                        color: var(--primaryColor);
+                        font-size: var(--normalFontSize);
+                      }
+                    }
+                  }
+
+                  .description {
+                    font-size: var(--normalFontSize);
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    line-height: 20px;
+                    font-weight: 500;
+                    height: 0;
+
+                    transition: all 0.3s ease-in-out;
+                    opacity: 0;
+                    padding: 0.5rem 1rem 1.5rem;
+                    border-radius: 0 0 var(--borderRadius);
+                    color: var(--primaryColorDark);
+                  }
+
+                  .show {
+                    height: 100px;
+                    opacity: 0.7;
+                  }
+
+                  .activeTitle {
+                    border: 1px solid transparent;
+                  }
+                }
+
+                .activeAccord {
+                  box-shadow: 0 4px 8px var(--shadowColor);
+                  border-radius: var(--borderRadius);
+                  border: 1px solid var(--shadowColor);
+                }
+              }
+            }
+
+            @media screen and (min-width: 550px) {
+              .textDiv {
+                margin-top: 20px;
+                flex-basis: 50%;
+              }
+            }
+
+            @media screen and (min-width: 1100px) {
+              flex-direction: row;
+              justify-content: space-between;
+
+              .textDiv {
+                flex-basis: 45%;
+
+                .accordion {
+                  .singleAccordion {
+                    .description {
+                      padding: 0 1rem 1.5rem;
+                    }
+
+                    .show {
+                      height: 100%;
+                    }
+                  }
+                }
+              }
+            }
+            .imgDiv {
+              flex-basis: 50%;
+              width: 50%;
+              height: 50%;
+            }
+            .textDiv {
+              flex-basis: 60%;
+            }
+          }
+        }
+      }
+
+      .textDiv {
+        .secContent {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}

@@ -129,3 +129,65 @@
     color: var(--primaryColorDark);
   }
 }
+
+//mediaqueries
+@media screen and (min-width: 760px) {
+  .Navbar {
+    .logoDiv {
+      span {
+        font-size: var(--h2FontSize);
+      }
+    }
+
+    .closeIcon,
+    .menuIcon {
+      display: none;
+    }
+
+    .menu {
+      ul {
+        display: flex;
+        gap: 3rem;
+
+        li {
+          font-size: var(--h3FontSize);
+          font-weight: 600;
+          padding: 1rem 0;
+          text-align: center;
+          cursor: pointer;
+          color: black;
+          opacity: 0.7;
+
+          &:hover {
+            color: rgb(245, 188, 83);
+            opacity: 1;
+            border-bottom: 0.2rem solid var(--primaryColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .Navbar {
+    padding: 2rem 10rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .Navbar {
+    padding: 2rem 14rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .Navbar {
+    .logoDiv {
+      .icon {
+        font-size: var(--h1FontSize);
+      }
+      span {
+        font-size: var(--h1FontSize);
+      }
+    }
+  }
+}
