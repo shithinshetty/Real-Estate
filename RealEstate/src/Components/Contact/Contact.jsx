@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { IoIosMailUnread } from "react-icons/io";
 import img from "../../Assets/Contact_img.jpg";
+
 import "./Contact.css";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="Contact container section">
+    <div
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      className="Contact container section"
+    >
       <div className="secContainer flex">
         <div className="imgDiv">
           <img src={img} alt="Contact Image" />

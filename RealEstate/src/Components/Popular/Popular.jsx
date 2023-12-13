@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BiLeftArrowCircle } from "react-icons/bi";
 import { BiRightArrowCircle } from "react-icons/bi";
 import img1 from "../../Assets/Popular_img1.jpg";
@@ -6,12 +6,16 @@ import img2 from "../../Assets/Popular_img2.jpg";
 import img3 from "../../Assets/Popular_img3.jpg";
 import img4 from "../../Assets/Popular_img4.jpg";
 import "./Popular.css";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Popular = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="Popular container section">
       <div className="secContainer">
-        <div className="secHeader">
+        <div data-aos="fade-up" className="secHeader">
           <div className="textDiv">
             <span className="orangeText">Best choice</span>
             <h1 className="title">

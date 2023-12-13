@@ -28,8 +28,8 @@
   padding: 2.3rem 0;
 }
 .Footer .secContainer {
-  gap: 1.5rem;
   text-align: center;
+  gap: 1.5rem;
 }
 .Footer .secContainer .logoDiv {
   padding: 1rem;
@@ -92,8 +92,36 @@
   opacity: 1;
 }
 .Footer .secContainer .footerLinks .phone,
-.Footer .secContainer .footerLinks .mail {
+.Footer .secContainer .footerLinks .mail,
+.Footer .secContainer .footerLinks .copyright {
+  gap: 1rem;
   color: var(--primaryColorDark);
   font-weight: 600;
   font-size: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .Footer {
+    margin-top: 20px;
+  }
+  .Footer .secContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    text-align: start;
+  }
+  .Footer .secContainer .footerLinks {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .Footer .secContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    text-align: start;
+  }
+  .Footer .secContainer .footerLinks {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=Footer.css.map */

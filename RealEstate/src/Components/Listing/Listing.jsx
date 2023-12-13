@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BedIcon from "@mui/icons-material/Bed";
 import PoolIcon from "@mui/icons-material/Pool";
 import WifiIcon from "@mui/icons-material/Wifi";
@@ -10,7 +10,8 @@ import image4 from "../../Assets/Listing_img4.jpg";
 import image5 from "../../Assets/Listing_img5.jpg";
 import image6 from "../../Assets/Listing_img6.jpg";
 import "./Listing.css";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const properties = [
   {
     id: 1,
@@ -62,8 +63,11 @@ const properties = [
   },
 ];
 const Listing = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="Listing container section">
+    <div data-aos="zoom-in" className="Listing container section">
       <div className="secContainer">
         <div className="secHeader">
           <span className="orangeText">Our Listings</span>
