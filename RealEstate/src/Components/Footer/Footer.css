@@ -100,7 +100,7 @@
   font-size: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 300px) {
   .Footer {
     margin-top: 20px;
   }
