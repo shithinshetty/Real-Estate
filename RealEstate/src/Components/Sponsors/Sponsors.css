@@ -43,7 +43,7 @@
 .Sponsors .secContainer img:hover {
   opacity: 1;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 300px) {
   .Sponsors .secContainer span:nth-child(2) {
     display: none;
   }
