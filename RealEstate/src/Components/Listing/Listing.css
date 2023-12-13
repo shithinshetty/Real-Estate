@@ -127,7 +127,7 @@
   font-weight: 500;
 }
 
-@media screen and (min-width: 250px) {
+@media screen and (min-width: 300px) {
   .Listing .secContainer .secHeader .icon {
     transform: translateY(0);
   }

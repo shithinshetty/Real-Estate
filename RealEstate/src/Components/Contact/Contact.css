@@ -113,7 +113,7 @@
   border-radius: 32%;
 }
 
-@media screen and (min-width: 250px) {
+@media screen and (min-width: 300px) {
   .Contact .secContainer {
     flex-direction: column;
     flex-flow: column-reverse;
